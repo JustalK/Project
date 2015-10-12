@@ -32,6 +32,8 @@
 			height: 100%; 
 			background: #000000;
 			overflow: hidden;
+			color: #333333;
+			font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 		}
 		</style>
 	</head>
@@ -40,12 +42,17 @@
 		<div id="content1">
 			<div id="content2">
 				<div id="block1" class="block" style="height:50%;width:30%;background:#E6E6FA;display: flex;justify-content: center;text-align:center;">
-					<div style="align-self: center;width:100%;"><div style="left:0;right:0;margin:auto;width:25%;min-width:80px;"><img src="img/fightPolymerBootstrap.png" style="width:100%;height:auto;"></src></div><br />
+					<div style="align-self: center;width:100%;"><div style="left:0;right:0;margin:auto;width:25%;min-width:80px;"><img src="img/fightPolymerBootstrap.png" style="width:100%;height:auto;"></img></div><br />
 					Bootstrap VS Polymer<br /><br />
-					<div id="block1hide" style="margin-left:20%;margin-right:20%;text-align: justify;">
+					<div id="block1hide" class="blockhide" style="text-align: justify;">
 					Il s'agit là d'une comparaison que j'ai effectué entre deux technologies similaires. D'un coté, on retrouve Polymer qui basé sur les web composants permet de creer ses propres balises html.
 					De l'autre, on retrouve le fameux Bootstrap avec une multitude de classes qui permettent de construire facilement un site web responsive. 
-					Pour comparer, j'ai recréé le même site de musique avec les deux technologies, j'ai ensuite pointé du doigt les difficultés que j'ai rencontré.</div>
+					Pour comparer, j'ai recréé le même site de musique avec les deux technologies, j'ai ensuite pointé du doigt les difficultés que j'ai rencontré.
+					<br /><br />
+					<div style="width:25%;float:left;margin-left:2%;"><img src="img/bp1.png" style="width:100%;height:auto;"></img></div>
+					<div style="width:25%;float:left;margin-left:2%;"><img src="img/bp2.png" style="width:100%;height:auto;"></img></div>
+					<div style="width:42%;float:left;margin-left:2%;"><div class="button">Bootstrap</div><br /><br /><div class="button">Polymer</div><br /><br /><div class="button">Rapport</div></div>
+					</div>
 					</div>
 				</div>
 				<div id="block2" class="block" style="height:25%;width:70%;background:#FFF000"></div>

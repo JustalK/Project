@@ -1,25 +1,49 @@
 @media(max-width:399px){
 	#content1{width: 260px;}
+	.blockhide{
+		margin-left:10%;
+		margin-right:10%;
+	}
 }
 
 @media(min-width:400px){
 	#content1{width: 400px;}
+	.blockhide{
+		margin-left:10%;
+		margin-right:10%;
+	}
 }
 
 @media(min-width:600px){
 	#content1{width: 600px;}
+	.blockhide{
+		margin-left:10%;
+		margin-right:10%;
+	}
 }
 
 @media(min-width:900px){
 	#content1{width: 900px;}
+	.blockhide{
+		margin-left:10%;
+		margin-right:10%;
+	}
 }
 
 @media(min-width:1200px){
 	#content1{width: 1200px;}
+	.blockhide{
+		margin-left:15%;
+		margin-right:15%;
+	}
 }
 
 @media(min-width:1500px){
 	#content1{width: 1500px;}
+	.blockhide{
+		margin-left:15%;
+		margin-right:15%;
+	}
 }
 
 #content1 {
@@ -46,4 +70,39 @@
 	border: 1px solid #000000;
 	margin: -1px;
 	cursor: pointer;
+}
+
+.button {	
+	color: #333;
+	background-color: #FFF;
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857;
+	border-radius: 4px;
+	-moz-user-select: none;
+	box-sizing: border-box;
+	width: 100%;
+}
+.button:focus{
+	color: #333;
+	background-color: #E6E6E6;
+	border-color: #8C8C8C;		
+}
+
+.button:active {
+	color: #333;
+	background-color: #D4D4D4;
+	border-color: #8C8C8C;
+	outline: 0px none;
+	background-image: none;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
 }

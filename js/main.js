@@ -9,21 +9,21 @@ $(document).ready(function() {
 		});
 		$("#block1").animate({opacity: '0.5'},150, function() {
 			$("#block1").animate({opacity: '1'},150, function() {
-				$("#block6").css("border","none");
-				$("#block6").css("margin","0px");
 				$("#block6").animate({height: "0%"},speed,function() {
-					$("#block5").css("border","none");
-					$("#block5").css("margin","0px");
+					$("#block6").css("border","none");
+					$("#block6").css("margin","0px");
 					$("#block5").animate({height: "0%"},speed,function(){
-						$("#block4").css("border","none");
-						$("#block4").css("margin","0px");
+						$("#block5").css("border","none");
+						$("#block5").css("margin","0px");
 						$("#block4").animate({height: "0%"},speed,function() {
-							$("#block3").css("border","none");
-							$("#block3").css("margin","0px");
+							$("#block4").css("border","none");
+							$("#block4").css("margin","0px");
 							$("#block3").animate({height: "0%"},speed,function() {
-								$("#block2").css("border","none");
-								$("#block2").css("margin","0px");
+								$("#block3").css("border","none");
+								$("#block3").css("margin","0px");
 								$("#block2").animate({height: "0%"},speed,function() {
+									$("#block2").css("border","none");
+									$("#block2").css("margin","0px");
 									$(".block").not("#block1").hide();
 									$("#block1").animate( {width: "100%"},speed,function(){
 									});
