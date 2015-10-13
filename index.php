@@ -55,7 +55,7 @@
 					</div>
 					</div>
 				</div>
-				<div id="block2" class="block" style="height:25%;width:70%;background:#FFF000"></div>
+				<div id="block2" class="block" style="float:right;height:25%;width:70%;background:#E6E6FA"></div>
 				<div id="block3" class="block" style="height:25%;width:50%;background:#FFFF00"></div>
 				<div id="block4" class="block" style="height:50%;width:20%;background:#FFFFF0"></div>
 				<div id="block5" class="block" style="top:-25%;height:25%;width:80%;background:#FFFFFF"></div>

@@ -46,6 +46,10 @@
 	}
 }
 
+#block1 {
+	border-spacing: 0px;
+}
+
 #content1 {
 	position:absolute;
 	left:0;
