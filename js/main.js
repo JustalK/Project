@@ -85,9 +85,9 @@ BLOCK1
 		}
 	});
 	
-	/* ===================================================================================================================>
-	BLOCK2
-	/* ===================================================================================================================>	*/	
+/* ===================================================================================================================>
+BLOCK2
+/* ===================================================================================================================>	*/	
 	$("#block2").click(function() {
 		click = 2;
 		$(".block").each(function() {
@@ -161,9 +161,9 @@ BLOCK1
 		}
 	});
 	
-	/* ===================================================================================================================>
-	BLOCK3
-	/* ===================================================================================================================> */
+/* ===================================================================================================================>
+BLOCK3
+/* ===================================================================================================================> */
 	
 	$("#block3").click(function() {
 		click = 3;
@@ -250,5 +250,63 @@ BLOCK1
 		}
 	});
 	
+/* ===================================================================================================================>
+BLOCK4
+/* ===================================================================================================================> */
+	$("#block4").click(function() {
+		click = 4;
+		$(".block").each(function() {
+			$(this).clearQueue().stop();
+			$(this).css("cursor","auto");
+		});
+		$("#block3").animate({opacity: '0.5'},150, function() {
+			$("#block3").animate({opacity: '1'},150, function() {
+				$("#block6").animate({width: "0%"},speed,function() {
+					$("#block6").css("border","none");
+					$("#block6").css("margin","0px");
+					$("#block5").animate({width: "0%"},speed,function(){
+						$("#block5").css("border","none");
+						$("#block5").css("margin","0px");
+						$("#block4").animate({"left":"50%"},speed);
+						$("#block3").animate({width: "0%"},speed,function() {
+							$("#block4").css("left","50%");
+							$("#block3").css("border","none");
+							$("#block3").css("margin","0px");
+							$("#block2").animate({width: "50%"},speed,function() {
+								$("#block4").css("left","0%");
+								$("#block4").css("top","25%");
+								$("#block4").animate({"left":"50%"},speed);
+								$("#block2").animate({width: "0%"},speed,function() {
+									$("#block2").css("border","none");
+									$("#block2").css("margin","0px");
+									$("#block4").animate({"left":"80%"},speed);
+									$("#block1").animate({width: "0%"},speed,function() {
+										$("#block1").css("border","none");
+										$("#block1").css("margin","0px");
+										$(".block").not("#block4").hide();
+										$("#block4").animate( {width: "100%"},speed);
+										$("#block4").animate( {left: "0%"},speed);
+										$("#block4").animate( {height: "100%"},speed,function(){
+											$("#block4hide").show();
+										});
+										$("#block4").animate( {top: "0%"},speed);
+									});									
+								});
+							});
+						});
+					});
+				});
+			});
+		});
+	});
 	
+	$("#block4").mouseleave(function() {
+		if(click==4) {
+			click=null;
+			$(".block").each(function() {
+				$(this).clearQueue().stop();
+				$(this).css("cursor","pointer");
+			});
+		}
+	});
 });
