@@ -165,6 +165,7 @@ BLOCK2
 BLOCK3
 /* ===================================================================================================================> */
 	
+	//TODO Error about the block 6, I have to cut the block and fix his position.
 	$("#block3").click(function() {
 		click = 3;
 		$(".block").each(function() {
