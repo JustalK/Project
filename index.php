@@ -41,7 +41,8 @@
 	<body>
 		<div id="content1">
 			<div id="content2">
-				<div id="block1" class="block" style="height:50%;width:30%;background:#E6E6FA;display: flex;justify-content: center;text-align:center;">
+				<!-- z-index is usefull for fixing the problem about the black line -->
+				<div id="block1" class="block" style="height:50%;width:30%;background:#E6E6FA;display: flex;justify-content: center;text-align:center;z-index:2;">
 					<div style="align-self: center;width:100%;"><div style="left:0;right:0;margin:auto;width:25%;min-width:80px;"><img src="img/fightPolymerBootstrap.png" style="width:100%;height:auto;"></img></div><br />
 					Bootstrap VS Polymer<br /><br />
 					<div id="block1hide" class="blockhide" style="text-align: justify;">
@@ -55,11 +56,11 @@
 					</div>
 					</div>
 				</div>
-				<div id="block2" class="block" style="float:left;height:25%;width:70%;background:#E6E6FA"></div>
-				<div id="block3" class="block" style="height:25%;width:50%;background:#FFFF00"></div>
-				<div id="block4" class="block" style="height:50%;width:20%;background:#FFFFF0"></div>
-				<div id="block5" class="block" style="top:-25%;height:25%;width:80%;background:#FFFFFF"></div>
-				<div id="block6" class="block" style="top:-25%;height:25%;width:100%;background:#0000FF"></div>
+				<div id="block2" class="block" style="float:right;height:25%;width:70%;background:#E6E6FA;z-index:6;"></div>
+				<div id="block3" class="block" style="height:25%;width:50%;background:#FFFF00;z-index:3;"></div>
+				<div id="block4" class="block" style="height:50%;width:20%;background:#FFFFF0;z-index:5;"></div>
+				<div id="block5" class="block" style="top:-25%;height:25%;width:80%;background:#FFFFFF;z-index:4;"></div>
+				<div id="block6" class="block" style="top:-25%;height:25%;width:100%;background:#0000FF;z-index:1;"></div>
 			</div>
 		</div>
 	</body>
