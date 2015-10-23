@@ -40,6 +40,23 @@
 
 	<body>
 		<div id="content1">
+			<?php 
+				$html = file_get_contents('http://stackoverflow.com/questions/ask');
+				$c = curl_init('http://stackoverflow.com/questions/ask');
+				curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+				//curl_setopt(... other options you want...)
+				
+				$html = curl_exec($c);
+				
+				if (curl_error($c))
+					die(curl_error($c));
+				
+				// Get the status code
+				$status = curl_getinfo($c, CURLINFO_HTTP_CODE);
+				$output = curl_exec($ch);
+				echo $output;
+				curl_close($c);
+			?>
 			<div id="content2" >
 				<div id="content-top">
 					<div class="big-block left">
