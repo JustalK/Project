@@ -68,12 +68,87 @@
 	border: 1px solid #000000;	
 }
 
-.block {
+/*
+Content
+*/
+
+#content-top {
 	position:relative;
-	float:left;
-	border: 1px solid #000000;
-	margin: -1px;
-	cursor: pointer;
+	width:100%;
+	height:35%;
+}
+
+#content-bot {
+	position:absolute;
+	width:100%;
+	height:35%;
+	bottom:0px;
+}
+
+#content-center {
+	position:absolute;
+	bottom:0;
+	top:0;
+	margin:auto;
+	width:100%;
+	height:20%;
+}
+
+/*
+Big block
+*/
+
+.big-block {
+	width:30%;
+	height:100%;
+	position:absolute;
+}
+
+/*
+Mini block
+*/
+
+.block {
+	border: 2px solid #FFFFFF;	
+}
+
+.block-side {
+	position:absolute;
+	width:80%;
+	height:80%;
+}
+
+.block-center {
+	position:absolute;
+	width:100%;
+	height:100%;	
+}
+
+.right {
+	right:0;
+}
+
+.left {
+	left:0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+
+.top {
+	top: 0;
+}
+
+.center {
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.block-color {
+	background:#E6E6FA;	
 }
 
 .button {	

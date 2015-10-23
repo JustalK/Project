@@ -39,30 +39,31 @@
 	</head>
 
 	<body>
-		<div id="content1" style="background:#000000;">
+		<div id="content1">
 			<div id="content2" >
-				<div id="content-top" style="width:100%;height:35%;position:relative;">
-					<div id="block-top-left" style="width:30%;height:100%;position:absolute;left:0;">
-						<div id="block1" style="position:absolute;right:0;bottom:0;width:80%;height:80%;background:#E6E6E6"></div>
+				<div id="content-top">
+					<div class="big-block left">
+						<div class="block block-side block-color right bottom" id="block1"></div>
 					</div>
-					<div id="block-top-right" style="width:30%;height:100%;position:absolute;right:0;">
-						<div id="block2" style="position:absolute;left:0;bottom:0;width:80%;height:80%;background:#E6E6E6"></div>
+					<div class="big-block right">
+						<div class="block block-side block-color left bottom" id="block2"></div>
 					</div>
-					<div id="block-top-center" style="width:30%;height:100%;position:absolute;left:0;right:0;margin:auto;">
-						<div id="block3" style="position:absolute;width:100%;height:100%;background:#E6E6E6"></div>
+					<div class="big-block center">
+						<div class="block block-color block-center" id="block3"></div>
 					</div>
 				</div>
-				<div id="content-center" style="position:absolute;bottom:0;top:0;margin:auto;width:100%;height:20%;background:#E6E6E6;">
+				<div id="content-center">
+						<div class="block block-color block-center" id="block7"></div>
 				</div>
-				<div id="content-bot" style="position:absolute;width:100%;height:35%;bottom:0px;">
-					<div id="block-top-left" style="width:30%;height:100%;position:absolute;left:0;">
-						<div id="block1" style="position:absolute;right:0;top:0;width:80%;height:80%;background:#E6E6E6"></div>
+				<div id="content-bot">
+					<div class="big-block left">
+						<div class="block block-side block-color right top" id="block4"></div>
 					</div>	
-					<div id="block-top-right" style="width:30%;height:100%;position:absolute;right:0;">
-						<div id="block2" style="position:absolute;left:0;top:0;width:80%;height:80%;background:#E6E6E6"></div>
+					<div class="big-block right">
+						<div class="block block-side block-color left top" id="block5"></div>
 					</div>
-					<div id="block-top-center" style="width:30%;height:100%;position:absolute;left:0;right:0;margin:auto;background: #00FFFF;">
-						<div id="block3" style="position:absolute;width:100%;height:100%;background:#E6E6E6"></div>
+					<div class="big-block center">
+						<div class="block block-color block-center" id="block6"></div>
 					</div>			
 				</div>
 			</div>
