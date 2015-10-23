@@ -39,28 +39,32 @@
 	</head>
 
 	<body>
-		<div id="content1">
-			<div id="content2">
-				<!-- z-index is usefull for fixing the problem about the black line -->
-				<div id="block1" class="block" style="height:50%;width:30%;background:#E6E6FA;display: flex;justify-content: center;text-align:center;z-index:2;">
-					<div style="align-self: center;width:100%;"><div style="left:0;right:0;margin:auto;width:25%;min-width:80px;"><img src="img/fightPolymerBootstrap.png" style="width:100%;height:auto;"></img></div><br />
-					Bootstrap VS Polymer<br /><br />
-					<div id="block1hide" class="blockhide" style="text-align: justify;">
-					Il s'agit là d'une comparaison que j'ai effectué entre deux technologies similaires. D'un coté, on retrouve Polymer qui basé sur les web composants permet de creer ses propres balises html.
-					De l'autre, on retrouve le fameux Bootstrap avec une multitude de classes qui permettent de construire facilement un site web responsive. 
-					Pour comparer, j'ai recréé le même site de musique avec les deux technologies, j'ai ensuite pointé du doigt les difficultés que j'ai rencontré.
-					<br /><br />
-					<div style="width:25%;float:left;margin-left:2%;"><img src="img/bp1.png" style="width:100%;height:auto;"></img></div>
-					<div style="width:25%;float:left;margin-left:2%;"><img src="img/bp2.png" style="width:100%;height:auto;"></img></div>
-					<div style="width:42%;float:left;margin-left:2%;"><div class="button">Bootstrap</div><br /><br /><div class="button">Polymer</div><br /><br /><div class="button">Rapport</div></div>
+		<div id="content1" style="background:#000000;">
+			<div id="content2" >
+				<div id="content-top" style="width:100%;height:35%;position:relative;">
+					<div id="block-top-left" style="width:30%;height:100%;position:absolute;left:0;">
+						<div id="block1" style="position:absolute;right:0;bottom:0;width:80%;height:80%;background:#E6E6E6"></div>
 					</div>
+					<div id="block-top-right" style="width:30%;height:100%;position:absolute;right:0;">
+						<div id="block2" style="position:absolute;left:0;bottom:0;width:80%;height:80%;background:#E6E6E6"></div>
+					</div>
+					<div id="block-top-center" style="width:30%;height:100%;position:absolute;left:0;right:0;margin:auto;">
+						<div id="block3" style="position:absolute;width:100%;height:100%;background:#E6E6E6"></div>
 					</div>
 				</div>
-				<div id="block2" class="block" style="float:right;height:25%;width:70%;background:#E6E6FA;z-index:6;"></div>
-				<div id="block3" class="block" style="height:25%;width:50%;background:#FFFF00;z-index:3;"></div>
-				<div id="block4" class="block" style="height:50%;width:20%;background:#FFFFF0;z-index:5;"></div>
-				<div id="block5" class="block" style="top:-25%;height:25%;width:80%;background:#FFFFFF;z-index:4;"></div>
-				<div id="block6" class="block" style="top:-25%;height:25%;width:100%;background:#0000FF;z-index:1;"></div>
+				<div id="content-center" style="position:absolute;bottom:0;top:0;margin:auto;width:100%;height:20%;background:#E6E6E6;">
+				</div>
+				<div id="content-bot" style="position:absolute;width:100%;height:35%;bottom:0px;">
+					<div id="block-top-left" style="width:30%;height:100%;position:absolute;left:0;">
+						<div id="block1" style="position:absolute;right:0;top:0;width:80%;height:80%;background:#E6E6E6"></div>
+					</div>	
+					<div id="block-top-right" style="width:30%;height:100%;position:absolute;right:0;">
+						<div id="block2" style="position:absolute;left:0;top:0;width:80%;height:80%;background:#E6E6E6"></div>
+					</div>
+					<div id="block-top-center" style="width:30%;height:100%;position:absolute;left:0;right:0;margin:auto;background: #00FFFF;">
+						<div id="block3" style="position:absolute;width:100%;height:100%;background:#E6E6E6"></div>
+					</div>			
+				</div>
 			</div>
 		</div>
 	</body>
