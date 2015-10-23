@@ -46,8 +46,17 @@
 	}
 }
 
-#block1 {
-	border-spacing: 0px;
+h1 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif; font-size: 64px; font-weight: 700; line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; }
+
+h2 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif; font-size: 48px; font-weight: 700; line-height: 48px; margin: 0 0 24px; padding: 0 30px; text-align: center; text-transform: uppercase; }
+
+.img-responsive {
+	height: auto;
+	width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	position:relative;
+	bottom:0;
 }
 
 #content1 {
@@ -108,8 +117,13 @@ Big block
 Mini block
 */
 
+.vcenter {
+	  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .block {
-	border: 2px solid #FFFFFF;	
 }
 
 .block-side {
@@ -139,6 +153,14 @@ Mini block
 
 .top {
 	top: 0;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+.slide-left {
+	width: 0%;
 }
 
 .center {

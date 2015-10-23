@@ -37,50 +37,69 @@
 		}
 		</style>
 	</head>
-
 	<body>
+	
+		<!-- load -->
+	
 		<div id="content1">
-			<?php 
-				$html = file_get_contents('http://stackoverflow.com/questions/ask');
-				$c = curl_init('http://stackoverflow.com/questions/ask');
-				curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-				//curl_setopt(... other options you want...)
-				
-				$html = curl_exec($c);
-				
-				if (curl_error($c))
-					die(curl_error($c));
-				
-				// Get the status code
-				$status = curl_getinfo($c, CURLINFO_HTTP_CODE);
-				$output = curl_exec($ch);
-				echo $output;
-				curl_close($c);
-			?>
 			<div id="content2" >
 				<div id="content-top">
 					<div class="big-block left">
-						<div class="block block-side block-color right bottom" id="block1"></div>
+						<div class="block block-side right bottom" id="block1">
+							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						</div>
 					</div>
 					<div class="big-block right">
-						<div class="block block-side block-color left bottom" id="block2"></div>
+						<div class="block block-side left bottom" id="block2">
+							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						</div>
 					</div>
 					<div class="big-block center">
-						<div class="block block-color block-center" id="block3"></div>
+						<div class="block block-center bottom" id="block3">
+							<div class="load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						</div>
 					</div>
 				</div>
 				<div id="content-center">
-						<div class="block block-color block-center" id="block7"></div>
+						<div id="l1" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+						<div id="l2" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div id="l3" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+						<div id="l4" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div class=" block-center vcenter invisible" id="block7"><h1></h1></div>
 				</div>
 				<div id="content-bot">
 					<div class="big-block left">
-						<div class="block block-side block-color right top" id="block4"></div>
+						<div class="block block-side right top" id="block4">
+							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>		
+						</div>
 					</div>	
 					<div class="big-block right">
-						<div class="block block-side block-color left top" id="block5"></div>
+						<div class="block block-side left top" id="block5">
+							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>					
+						</div>
 					</div>
 					<div class="big-block center">
-						<div class="block block-color block-center" id="block6"></div>
+						<div class="block block-center" id="block6">
+							<div class="load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						</div>
 					</div>			
 				</div>
 			</div>
