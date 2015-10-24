@@ -20,7 +20,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		
 		<!-- WEBGL -->
-		<script src="js/three.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
 		
 		<!-- Tetris - CSS/JAVASCRIPT/JQUERY -->
 		<script src="js/main.js"></script>
@@ -93,7 +93,42 @@
 	    			<h3>Current streak : <?php print(get_string_between($contrib, '<span class="contrib-number">', '</span>')); ?></h3>
 	    		</div>
 			</div>
+			
+			<div style="position:absolute;bottom:0;width:100%;height:10%;">
+				<div class="vcenter" style="position:absolute;right:0;height:100%;">
+	    			<h3>Justal "Latsuj" K. - 2014</h3>
+	    		</div>
+			</div>
+			
 			<div id="content2">
+			
+				<div class="rayon load-top" style="position:absolute;left:0;top:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
+				<div class="rayon load-bot" style="position:absolute;bottom:0;left:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
+			
+			
+							<div class="decor" style="position:absolute;left:25%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:20%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:22%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:38%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:42%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:45%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:60%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:78%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:75%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+							
+							<div class="decor" style="position:absolute;left:88%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:90%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:93%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							
+							<div class="decor" style="position:absolute;left:63%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:56%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:52%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:40%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							
+							<div class="decor" style="position:absolute;left:27%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:17%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="decor" style="position:absolute;left:12%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+			
 				<div id="content-top">
 					<div class="big-block left">
 						<div class="block block-side right bottom vcenter" id="block1">
@@ -122,6 +157,7 @@
 							<div class="invisible"><h2>Projects</h2></div>
 						</div>
 					</div>
+					
 				</div>
 				<div id="content-center">
 						<div class="block-main">

@@ -14,18 +14,20 @@ $(document).ready(function() {
 					$("#l4").animate({width: "100%"},300,function() {
 						$("#block7").animate({opacity: "1"},300);
 						
-
 						var str = "Welcome";
 						afficher(0,str.length,str,$("#block7").children("h1").html());
-							$(".load-left").animate({height: "100%"},100,function() {
-								$(".load-top").animate({width: "100%"},100,function() {
-									$(".load-right").animate({height: "100%"},100,function() {
-										$(".load-bot").animate({width: "100%"},100,function() {
-											$(".block").children(".invisible").animate({"opacity": "1"},200);
+						
+						$(".decor").animate({height: "5%"},300,function() {
+								$(".load-left").animate({height: "100%"},100,function() {
+									$(".load-top").animate({width: "100%"},100,function() {
+										$(".load-right").animate({height: "100%"},100,function() {
+											$(".load-bot").animate({width: "100%"},100,function() {
+												$(".block").children(".invisible").animate({"opacity": "1"},200);
+											});
 										});
 									});
 								});
-							});
+						});
 					});
 				});
 			});
@@ -57,6 +59,7 @@ $(document).ready(function() {
 			$(".block").not($(elem)).css("display","none");
 			$(".block-main").css("display","none");
 		});
+		$(".decor").animate({"opacity": "0"},300);
 		$(".block-main").animate({"opacity": "0"},300);
 	});
 	

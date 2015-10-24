@@ -111,7 +111,7 @@
 
 h1 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; line-height: 64px; margin: 0 0 0; padding: 20px 30px; text-align: center; text-transform: uppercase; }
 
-h3,h2 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; margin: 0 0 24px; padding: 0 30px; text-align: center; text-transform: uppercase; }
+h3,h2 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; margin: 0 0 0; padding: 0 30px; text-align: center; text-transform: uppercase; }
 
 .img-responsive {
 	height: auto;
