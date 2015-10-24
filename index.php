@@ -45,60 +45,67 @@
 			<div id="content2" >
 				<div id="content-top">
 					<div class="big-block left">
-						<div class="block block-side right bottom" id="block1">
-							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div class="block block-side right bottom vcenter" id="block1">
+							<div class="rayon load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>Articles</h2></div>
 						</div>
 					</div>
 					<div class="big-block right">
-						<div class="block block-side left bottom" id="block2">
-							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div class="block block-side left bottom vcenter" id="block2">
+							<div class="rayon load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>Portefolio</h2></div>
 						</div>
 					</div>
 					<div class="big-block center">
-						<div class="block block-center bottom" id="block3">
-							<div class="load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div class="block block-center bottom vcenter" id="block3">
+							<div class="rayon load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>Projects</h2></div>
 						</div>
 					</div>
 				</div>
 				<div id="content-center">
+						<div class="block-main">
 						<div id="l1" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
 						<div id="l2" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
 						<div id="l3" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
 						<div id="l4" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
-						<div class=" block-center vcenter invisible" id="block7"><h1></h1></div>
+						<div class="block-center vcenter invisible" id="block7"><h1>#######</h1></div></div>
 				</div>
 				<div id="content-bot">
 					<div class="big-block left">
-						<div class="block block-side right top" id="block4">
-							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>		
+						<div class="block block-side right top vcenter" id="block4">
+							<div class="rayon load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>?</h2></div>		
 						</div>
 					</div>	
 					<div class="big-block right">
-						<div class="block block-side left top" id="block5">
-							<div class="load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>					
+						<div class="block block-side left top vcenter" id="block5">
+							<div class="rayon load-left" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-right" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>About Me</h2></div>					
 						</div>
 					</div>
 					<div class="big-block center">
-						<div class="block block-center" id="block6">
-							<div class="load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
-							<div class="load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+						<div class="block block-center vcenter" id="block6">
+							<div class="rayon load-right" style="position:absolute;left:0;bottom:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-bot" style="position:absolute;left:0;top:0;left:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="rayon load-left" style="position:absolute;right:0;top:0;width:1px;height:0%;background: #00FFFF"></div>
+							<div class="rayon load-top" style="position:absolute;bottom:0;right:0;width:0%;height:1px;background: #00FFFF"></div>
+							<div class="invisible"><h2>GitHub</h2></div>
 						</div>
 					</div>			
 				</div>

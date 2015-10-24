@@ -1,3 +1,8 @@
+String.prototype.replaceAt=function(index, character) {
+    return this.substr(0, index) + character + this.substr(index+character.length);
+}
+
+
 $(document).ready(function() {
 	load();
 	
@@ -11,12 +16,13 @@ $(document).ready(function() {
 						
 
 						var str = "Welcome";
-						afficher(0,str.length,str,"");
-						
+						afficher(0,str.length,str,$("#block7").children("h1").html());
 							$(".load-left").animate({height: "100%"},100,function() {
 								$(".load-top").animate({width: "100%"},100,function() {
 									$(".load-right").animate({height: "100%"},100,function() {
-										$(".load-bot").animate({width: "100%"},100);
+										$(".load-bot").animate({width: "100%"},100,function() {
+											$(".block").children(".invisible").animate({"opacity": "1"},200);
+										});
 									});
 								});
 							});
@@ -30,7 +36,8 @@ $(document).ready(function() {
 		$("#block7").animate({zIndex: "1000"},100,function() {
 			$("#block7").html("<h1>"+tmp+"</h1>");
 			if(cpt!=nbr) {
-				afficher(cpt+1,nbr,str,tmp+str[cpt]);
+				tmp = tmp.substr(0, cpt) + str[cpt] + tmp.substr(cpt + 1);
+				afficher(cpt+1,nbr,str,tmp);
 			}
 		
 		});
@@ -38,9 +45,23 @@ $(document).ready(function() {
 	
 	var isClicked = false;
 	
-	$(".block").mouseenter(function(){
-
+	$(".block").click(function() {
+		$(this).children(".rayon").css( "background", "#FF0000" );
+		$(this).find("h2").css("color","#FF0000");
+		var elem = $(this);
+		
+		$(".block").each(function() {
+			$(this).dequeue().stop();
+		});	
+		$(".block").not(this).animate({"opacity": "0"},300,function() {
+			$(".block").not($(elem)).css("display","none");
+			$(".block-main").css("display","none");
+		});
+		$(".block-main").animate({"opacity": "0"},300);
 	});
+	
+	function nextpage(block) {
+	}
 	
 	$(".block").not("#block7").mouseenter(function(){	
 		$(".block").each(function() {
