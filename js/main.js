@@ -146,16 +146,10 @@ $(document).ready(function() {
 		});
 	});
 	
-		$(".block").not("#block7").mouseenter(function(){
+		$(".block").not("#block7").mouseover(function(){
 			if(!isClicked) {
-				$(".block").each(function() {
-					$(this).dequeue().stop();
-				});	
-				$(this).animate({height: "100%"},100,function() {
-					$(".block").not("#block7").not(this).filter(':not(:animated)').each(function() {
-						$(this).animate({height: "50%"},50);
-					});			
-				});				
+				$(this).stop().clearQueue().animate({height: "80%"},50);
+				$(".block").not("#block7").not(this).stop().clearQueue().animate({height: "50%"},50);				
 			}
 		});
 		
@@ -171,7 +165,13 @@ $(document).ready(function() {
 		
 		$(".block").not("#block7").mouseleave(function(){
 			if(!isClicked) {
-				default_block();
+				setTimeout(function(){ 
+					if ($('.block:hover').length == 0) {
+						$(".block").not("#block3").not("#block6").animate({height: "80%"},200);
+						$("#block3").animate({height: "100%"},200);
+						$("#block6").animate({height: "100%"},200);
+					}
+				}, 300);
 			}
 		});	
 	
