@@ -100,34 +100,77 @@
 	    		</div>
 			</div>
 			
+			
+			
+			<div class="rayon load-top" style="position:absolute;left:0;top:10%;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
+			<div class="rayon load-bot" style="position:absolute;bottom:10%;left:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
+			
+			<div id="about-me">
+				<div style="position:absolute;left:5%;top:10%;width:25%;height:50%;">
+					<img class="data-about-me invisible" style="width:100%;" alt="" src="img/MySign.png" />
+				</div>	
+
+				<div style="position:absolute;left:35%;top:10%;width:60%;height:80%;">
+					<div id="decor-about-me-box-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					<div id="decor-about-me-box-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+					<div id="decor-about-me-box-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+					<div id="decor-about-me-box-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>	
+				</div>	
+				
+				<div id="back-about-me" class="vcenter pointer" style="position:absolute;left:5%;top:70%;width:25%;height:20%;">
+					<div id="decor-about-me-box-left2" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					<div id="decor-about-me-box-top2" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+					<div id="decor-about-me-box-right2" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+					<div id="decor-about-me-box-bot2" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>
+					<h2 class="data-about-me invisible">Back</h2>			
+				</div>				
+			</div>
+			
+			<div id="articles">
+				
+				<div style="position:absolute;left:25%;bottom:0;width:70%;height:100%;">
+					<div class="decor-articles-line" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					<div class="decor-articles-line" style="position:absolute;right:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					
+					<div class="data-articles invisible">
+						<div class="selected vcenter pointer" style="width:100%;"><h5>Fichier article de PDF</h5></div>
+						<div class="selected vcenter pointer" style="width:100%;"><h5>Fichier article de PDF</h5></div>
+					</div>
+					
+				</div>
+				
+				<div class="back vcenter" style="position:absolute;left:5%;top:10%;width:15%;height:50%;">
+					<div id="decor-articles-box-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					<div id="decor-articles-box-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+					<div id="decor-articles-box-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+					<div id="decor-articles-box-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>
+					<h4 class="data-articles invisible">Back</h4>
+				</div>			
+			</div>
+
 			<div id="content2">
-			
-				<div class="rayon load-top" style="position:absolute;left:0;top:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
-				<div class="rayon load-bot" style="position:absolute;bottom:0;left:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
-			
-			
-							<div class="decor" style="position:absolute;left:25%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:20%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:22%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:38%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:42%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:45%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:60%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:78%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:75%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
-							
-							<div class="decor" style="position:absolute;left:88%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:90%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:93%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							
-							<div class="decor" style="position:absolute;left:63%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:56%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:52%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:40%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							
-							<div class="decor" style="position:absolute;left:27%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:17%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
-							<div class="decor" style="position:absolute;left:12%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:25%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:20%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:22%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:38%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:42%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:45%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:60%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:78%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:75%;bottom:60%;width:1px;height:0%;background: #00FFFF"></div>
+					
+					<div class="decor" style="position:absolute;left:88%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:90%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:93%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					
+					<div class="decor" style="position:absolute;left:63%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:56%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:52%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:40%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					
+					<div class="decor" style="position:absolute;left:27%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:17%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
+					<div class="decor" style="position:absolute;left:12%;top:60%;width:1px;height:0%;background: #00FFFF"></div>
 			
 				<div id="content-top">
 					<div class="big-block left">
