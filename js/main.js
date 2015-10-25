@@ -148,7 +148,7 @@ $(document).ready(function() {
 	
 		$(".block").not("#block7").mouseover(function(){
 			if(!isClicked) {
-				$(this).stop().clearQueue().animate({height: "80%"},50);
+				$(this).stop().clearQueue().animate({height: "100%"},50);
 				$(".block").not("#block7").not(this).stop().clearQueue().animate({height: "50%"},50);				
 			}
 		});

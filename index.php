@@ -114,6 +114,14 @@
 					<div id="decor-about-me-box-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
 					<div id="decor-about-me-box-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
 					<div id="decor-about-me-box-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>	
+					<h6 class="data-about-me invisible" style="text-transform: none;text-align: left;"><br />
+						Pseudo: Latsuj<br />
+						Name: Justal K.<br />
+						From : France<br />
+						Hobby : Codding :p<br /><br />
+						If you wanna know something about me, feel free to ask me. You can easily contact me by email or any other ways that I have listed
+						below. Be sure I will answer back within the two or three days, I'm still a geek so I'm always connected.
+					</h6>
 				</div>	
 				
 				<div id="back-about-me" class="vcenter pointer" style="position:absolute;left:5%;top:70%;width:25%;height:20%;">
