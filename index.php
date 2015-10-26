@@ -104,6 +104,58 @@
 			<div class="rayon load-top" style="position:absolute;left:0;top:10%;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
 			<div class="rayon load-bot" style="position:absolute;bottom:10%;left:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
 			
+			<div id="projects">
+				<div  class="vcenter" style="position:absolute;left:0;right:0;margin: auto;width:80%;height:15%;bottom:3.5%;">
+					<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+					<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+					<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+					<div class="decor-project-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>
+					<h5 class="data-projects invisible">Back</h5>
+				</div>
+				<div class="grille100">
+					<div class="grille50">
+						<div class="grille25">
+							<div class="project vcenter">
+									<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+									<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+									<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+									<div class="decor-project-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>
+									<h5 class="data-projects invisible">Project 1</h5>
+							</div>
+						</div>
+						<div class="grille25">
+							<div class="project vcenter">
+									<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+									<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+									<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+									<div class="decor-project-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>							
+									<h5 class="data-projects invisible">Project 2</h5>
+							</div>
+						</div>
+					</div>
+					<div class="grille50">
+						<div class="grille25">
+							<div class="project vcenter">
+									<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+									<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+									<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+									<div class="decor-project-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>								
+									<h5 class="data-projects invisible">Project 3</h5>
+							</div>
+						</div>
+						<div class="grille25">
+							<div class="project vcenter">
+									<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
+									<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
+									<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	
+									<div class="decor-project-bot" style="position:absolute;right:0;bottom:0;width:0;height:1px;background: #00FFFF"></div>			
+									<h5 class="data-projects invisible">Project 4</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<div id="about-me">
 				<div style="position:absolute;left:5%;top:10%;width:25%;height:50%;">
 					<img class="data-about-me invisible" style="width:100%;" alt="" src="img/MySign.png" />

@@ -128,6 +128,19 @@ $(document).ready(function() {
 		});
 	}	
 	
+	function load_projects() {
+		$("#projects").css("display","block");
+		$(".decor-project-left").animate({height: "100%"},300,function() {
+			$(".decor-project-top").animate({width: "100%"},300,function() {
+				$(".decor-project-right").animate({height: "100%"},300,function() {
+					$(".decor-project-bot").animate({width: "100%"},300,function() {
+						$(".data-projects").animate({"opacity":"1"},100);
+					});
+				});
+			});
+		});
+	}
+	
 	$("#block1").click(function() {
 		isClicked = true;
 		$(this).children(".rayon").css( "background", "#FF0000" );
@@ -136,6 +149,15 @@ $(document).ready(function() {
 			load_articles();
 		});
 	});
+
+	$("#block3").click(function() {
+		isClicked = true;
+		$(this).children(".rayon").css( "background", "#FF0000" );
+		$(this).find("h2").css("color","#FF0000");
+		$("#content2").delay(300).animate({left:"200%"},500,function() {
+			load_projects();
+		});
+	});	
 	
 	$("#block5").click(function() {
 		isClicked = true;
