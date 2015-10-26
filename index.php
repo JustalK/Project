@@ -105,7 +105,7 @@
 			<div class="rayon load-bot" style="position:absolute;bottom:10%;left:0;right:0;margin:auto;width:0%;height:1px;background: #00FFFF"></div>
 			
 			<div id="projects">
-				<div  class="vcenter" style="position:absolute;left:0;right:0;margin: auto;width:80%;height:15%;bottom:3.5%;">
+				<div  id="back-project" class="vcenter pointer" style="position:absolute;left:0;right:0;margin: auto;width:80%;height:15%;bottom:3.5%;">
 					<div class="decor-project-left" style="position:absolute;left:0;bottom:0;width:1px;height:0;background: #00FFFF"></div>
 					<div class="decor-project-top" style="position:absolute;left:0;top:0;width:0;height:1px;background: #00FFFF"></div>
 					<div class="decor-project-right" style="position:absolute;right:0;top:0;width:1px;height:0;background: #00FFFF"></div>	

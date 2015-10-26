@@ -314,7 +314,7 @@ h6,h5,h4,h3,h2 { color: #00FFFF; font-family: 'Open Sans Condensed', sans-serif;
 Content
 */
 
-#about-me,#articles {
+#projects,#about-me,#articles {
 	display: none;
 }
 

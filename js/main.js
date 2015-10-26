@@ -54,6 +54,10 @@ $(document).ready(function() {
 	$("#back-about-me").click(function() {
 		deload_about_me();
 	});	
+
+	$("#back-project").click(function() {
+		deload_projects();
+	});		
 	
 	function load_articles() {
 		$("#articles").css("display","block");
@@ -130,14 +134,27 @@ $(document).ready(function() {
 	
 	function load_projects() {
 		$("#projects").css("display","block");
-		$(".decor-project-left").animate({height: "100%"},300,function() {
-			$(".decor-project-top").animate({width: "100%"},300,function() {
-				$(".decor-project-right").animate({height: "100%"},300,function() {
-					$(".decor-project-bot").animate({width: "100%"},300,function() {
-						$(".data-projects").animate({"opacity":"1"},100);
-					});
-				});
-			});
+		$(".decor-project-left").animate({height: "100%"},300);
+		$(".decor-project-top").animate({width: "100%"},300);
+		$(".decor-project-right").animate({height: "100%"},300);
+		$(".decor-project-bot").animate({width: "100%"},300);
+		$(".data-projects").animate({"opacity":"1"},100);
+	}
+	
+	function deload_projects() {
+		$(".block").children(".rayon").css( "background", "#00FFFF" );
+		$(".block").find("h2").css("color","#00FFFF");
+		default_block();
+		isClicked = false;
+		$(".data-projects").animate({"opacity":"0"},100);
+		$(".decor-project-left").animate({height: "0"},300);
+		$(".decor-project-top").animate({width: "0"},300);
+		$(".decor-project-right").animate({height: "0"},300);
+		$(".decor-project-bot").animate({width: "0"},300,function() {
+			if ($(".decor-project-bot:animated").length === 0) {
+				$("#projects").css("display","none");	
+				$("#content2").animate({left:"0"},500);	
+			}
 		});
 	}
 	
