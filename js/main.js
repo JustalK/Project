@@ -10,26 +10,24 @@ $(document).ready(function() {
 	
 	
 	function load() {
-		$("#l1").animate({height: "100%"},300,function() {
-			$("#l2").animate({width: "100%"},300,function() {
-				$("#l3").animate({height: "100%"},300,function() {
-					$("#l4").animate({width: "100%"},300,function() {
+		$("#l1").animate({height: "100%"},250,function() {
+			$("#l2").animate({width: "100%"},200,function() {
+				$("#l3").animate({height: "100%"},250,function() {
+					$("#l4").animate({width: "100%"},250,function() {
 						$("#block7").animate({opacity: "1"},300);
 						
 						var str = "Welcome";
 						afficher(0,str.length,str,$("#block7").children("h5").html());
 						
-						$(".decor").animate({height: "5%"},300,function() {
-								$(".load-left").animate({height: "100%"},100,function() {
-									$(".load-top").animate({width: "100%"},100,function() {
-										$(".load-right").animate({height: "100%"},100,function() {
-											$(".load-bot").animate({width: "100%"},100,function() {
-												$(".block").children(".invisible").animate({"opacity": "1"},200);
-												isLoad=true;
-											});
-										});
-									});
-								});
+						$(".decor").animate({height: "5%"},200,function() {
+							if ($(".decor:animated").length === 0) {
+								$(".load-left").animate({height: "100%"},250);
+								$(".load-top").animate({width: "100%"},250);
+								$(".load-right").animate({height: "100%"},250);
+								$(".load-bot").animate({width: "100%"},250);
+								$(".block").children(".invisible").animate({"opacity": "1"},200);
+								isLoad=true;
+							}
 						});
 					});
 				});
@@ -38,7 +36,7 @@ $(document).ready(function() {
 	}
 	
 	function afficher(cpt,nbr,str,tmp) {
-		$("#block7").animate({zIndex: "1000"},100,function() {
+		$("#block7").animate({zIndex: "1000"},30,function() {
 			$("#block7").html("<h5>"+tmp+"</h5>");
 			if(cpt!=nbr) {
 				tmp = tmp.substr(0, cpt) + str[cpt] + tmp.substr(cpt + 1);
@@ -85,8 +83,10 @@ $(document).ready(function() {
 				$("#decor-articles-box-top").animate({width: "0"},100,function() {
 					$("#decor-articles-box-left").animate({height: "0"},100,function() {
 						$(".decor-articles-line").animate({height: "0"},500,function() {
-							$("#articles").css("display","none");		
-							$("#content2").animate({left:"0"},500);
+							if ($(".decor-articles-line:animated").length === 0) {
+								$("#articles").css("display","none");		
+								$("#content2").animate({left:"0"},500);
+							}
 						});
 					});
 				});
