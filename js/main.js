@@ -6,7 +6,7 @@ String.prototype.replaceAt=function(index, character) {
 $(document).ready(function() {
 	load();
 	var isClicked = false;
-	
+	var isLoad = false;
 	
 	
 	function load() {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 						$("#block7").animate({opacity: "1"},300);
 						
 						var str = "Welcome";
-						afficher(0,str.length,str,$("#block7").children("h1").html());
+						afficher(0,str.length,str,$("#block7").children("h5").html());
 						
 						$(".decor").animate({height: "5%"},300,function() {
 								$(".load-left").animate({height: "100%"},100,function() {
@@ -25,6 +25,7 @@ $(document).ready(function() {
 										$(".load-right").animate({height: "100%"},100,function() {
 											$(".load-bot").animate({width: "100%"},100,function() {
 												$(".block").children(".invisible").animate({"opacity": "1"},200);
+												isLoad=true;
 											});
 										});
 									});
@@ -38,7 +39,7 @@ $(document).ready(function() {
 	
 	function afficher(cpt,nbr,str,tmp) {
 		$("#block7").animate({zIndex: "1000"},100,function() {
-			$("#block7").html("<h1>"+tmp+"</h1>");
+			$("#block7").html("<h5>"+tmp+"</h5>");
 			if(cpt!=nbr) {
 				tmp = tmp.substr(0, cpt) + str[cpt] + tmp.substr(cpt + 1);
 				afficher(cpt+1,nbr,str,tmp);
@@ -188,9 +189,68 @@ $(document).ready(function() {
 		$(".block").not("#block7").mouseover(function(){
 			if(!isClicked) {
 				$(this).stop().clearQueue().animate({height: "100%"},50);
-				$(".block").not("#block7").not(this).stop().clearQueue().animate({height: "50%"},50);				
+				$(".block").not("#block7").not(this).stop().clearQueue().animate({height: "50%"},50);
+				definition_menu($(this));
 			}
 		});
+		
+		
+		var currentSentance = "";
+		var sentance1 = "Do you wanna read something usefull ?";
+		var sentance2 = "Some tricky things";
+		var sentance3 = "Let's me show you what I'm capable of !";
+		var sentance4 = "A presentation ? Ok, click here !";
+		var sentance5 = "Do you wanna know who I am ?";
+		var sentance6 = "Do you wanna see my source code ?";
+		function definition_menu(block) {
+			if(isLoad) {		
+				if($(block).is($("#block1"))) {
+					if(currentSentance!=sentance1) {
+						currentSentance=sentance1;
+						afficher_write_first(sentance1);
+					}
+				} else if($(block).is($("#block3"))) {
+					if(currentSentance!=sentance3) {
+						currentSentance=sentance3;
+						afficher_write_first(sentance3);
+					}
+				} else if($(block).is($("#block2"))) {
+					if(currentSentance!=sentance2) {
+						currentSentance=sentance2;
+						afficher_write_first(sentance2);
+					}
+				} else if($(block).is($("#block4"))) {
+					if(currentSentance!=sentance4) {
+						currentSentance=sentance4;
+						afficher_write_first(sentance4);
+					}
+				} else if($(block).is($("#block6"))) {
+					if(currentSentance!=sentance6) {
+						currentSentance=sentance6;
+						afficher_write_first(sentance6);
+					}
+				} else if($(block).is($("#block5"))) {
+					if(currentSentance!=sentance5) {
+						currentSentance=sentance5;
+						afficher_write_first(sentance5);
+					}
+				}
+			}
+		}
+	
+		function afficher_write_first(rsl) {
+			afficher_write(rsl,"");
+		}
+		
+		function afficher_write(rsl,tmp) {
+			$("#block7").stop().dequeue().animate({zIndex: "1000"},25,function() {
+				$("#block7").html("<h5>"+tmp+"</h5>");
+				if(rsl.length!=tmp.length) {
+					afficher_write(rsl,tmp+rsl[tmp.length]);
+				}
+			
+			});
+		}
 		
 		$(".selected").mouseenter(function(){	
 			$(this).css("background","#00FFFF");
@@ -209,6 +269,8 @@ $(document).ready(function() {
 						$(".block").not("#block3").not("#block6").animate({height: "80%"},200);
 						$("#block3").animate({height: "100%"},200);
 						$("#block6").animate({height: "100%"},200);
+						afficher_write_first("what you wanna do ?");
+						currentSentance="";
 					}
 				}, 300);
 			}
