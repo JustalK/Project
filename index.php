@@ -48,7 +48,7 @@
 			</div>
 			
 			<div id="articles">
-				<?php include('articles.html');?>		
+				<?php include('articles.php');?>		
 			</div>
 
 			<div id="content2">

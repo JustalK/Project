@@ -163,7 +163,7 @@ $(document).ready(function() {
 		isClicked = true;
 		$(this).children(".rayon").css( "background", "#FF0000" );
 		$(this).find("h2").css("color","#FF0000");
-		$("#content2").delay(300).animate({left:"200%"},500,function() {
+		$("#content2").delay(300).animate({left:"-200%"},500,function() {
 			load_articles();
 		});
 	});
@@ -172,7 +172,7 @@ $(document).ready(function() {
 		isClicked = true;
 		$(this).children(".rayon").css( "background", "#FF0000" );
 		$(this).find("h2").css("color","#FF0000");
-		$("#content2").delay(300).animate({left:"200%"},500,function() {
+		$("#content2").delay(300).animate({left:"-200%"},500,function() {
 			load_projects();
 		});
 	});	
@@ -196,43 +196,49 @@ $(document).ready(function() {
 		
 		
 		var currentSentance = "";
-		var sentance1 = "Do you wanna read something usefull ?";
-		var sentance2 = "Some tricky things";
-		var sentance3 = "Let's me show you what I'm capable of !";
-		var sentance4 = "A presentation ? Ok, click here !";
-		var sentance5 = "Do you wanna know who I am ?";
-		var sentance6 = "Do you wanna see my source code ?";
+		var sentance1 = ["Do you wanna read something useful ?","Some articles that I have written.","My words, my thoughts !","Maybe some useful words...I hope :)"];
+		var sentance2 = ["Some tricky things.","When I have some free time, I'm codding.","When I'm playing with the technologies."];
+		var sentance3 = ["Lemme show you what I'm capable of !","My four favorites projects <3","Just some results of my work."];
+		var sentance4 = ["A presentation ? Ok, click here !","If I told you to click here, just do it !"];
+		var sentance5 = ["Do you wanna know who I am ?","Hey, I'm Latsuj !","When a geek, tell you who he is."];
+		var sentance6 = ["Do you wanna see my source code ?","my inner self = my code"];
 		function definition_menu(block) {
 			if(isLoad) {		
 				if($(block).is($("#block1"))) {
-					if(currentSentance!=sentance1) {
-						currentSentance=sentance1;
-						afficher_write_first(sentance1);
+					if(sentance1.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance1.length) + 0);
+						currentSentance=sentance1[rng];
+						afficher_write_first(sentance1[rng]);
 					}
 				} else if($(block).is($("#block3"))) {
-					if(currentSentance!=sentance3) {
-						currentSentance=sentance3;
-						afficher_write_first(sentance3);
+					if(sentance3.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance3.length) + 0);
+						currentSentance=sentance3[rng];
+						afficher_write_first(sentance3[rng]);
 					}
 				} else if($(block).is($("#block2"))) {
-					if(currentSentance!=sentance2) {
-						currentSentance=sentance2;
-						afficher_write_first(sentance2);
+					if(sentance2.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance2.length) + 0);
+						currentSentance=sentance2[rng];
+						afficher_write_first(sentance2[rng]);
 					}
 				} else if($(block).is($("#block4"))) {
-					if(currentSentance!=sentance4) {
-						currentSentance=sentance4;
-						afficher_write_first(sentance4);
+					if(sentance4.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance4.length) + 0);
+						currentSentance=sentance4[rng];
+						afficher_write_first(sentance4[rng]);
 					}
 				} else if($(block).is($("#block6"))) {
-					if(currentSentance!=sentance6) {
-						currentSentance=sentance6;
-						afficher_write_first(sentance6);
+					if(sentance6.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance6.length) + 0);
+						currentSentance=sentance6[rng];
+						afficher_write_first(sentance6[rng]);
 					}
 				} else if($(block).is($("#block5"))) {
-					if(currentSentance!=sentance5) {
-						currentSentance=sentance5;
-						afficher_write_first(sentance5);
+					if(sentance5.indexOf(currentSentance)==-1) {
+						var rng = Math.floor((Math.random() * sentance5.length) + 0);
+						currentSentance=sentance5[rng];
+						afficher_write_first(sentance5[rng]);
 					}
 				}
 			}
@@ -269,7 +275,7 @@ $(document).ready(function() {
 						$(".block").not("#block3").not("#block6").animate({height: "80%"},200);
 						$("#block3").animate({height: "100%"},200);
 						$("#block6").animate({height: "100%"},200);
-						afficher_write_first("what you wanna do ?");
+						afficher_write_first("what do you wanna do ?");
 						currentSentance="";
 					}
 				}, 300);
