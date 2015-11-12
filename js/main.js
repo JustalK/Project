@@ -191,13 +191,13 @@ $(document).ready(function() {
 				$(this).stop().clearQueue().animate({height: "100%"},50);
 				$(".block").not("#block7").not(this).stop().clearQueue().animate({height: "50%"},50);
 				definition_menu($(this));
+				$(this).find(".rayon-left").css("width","3px");
+				$(this).find(".rayon-right").css("width","3px");
+				$(this).find(".rayon-bottom").css("height","3px");
+				$(this).find(".rayon-top").css("height","3px");
+				//TODO Have to replace here
+				$(this).find("h2").css("font-size",$(this).find("h2").css("font-size"));
 			}
-		});
-		
-		$(".block").not("#block7").mouseenter(function(){
-		    var back = ["#FF0000","#00FF00","#0000FF","#F0F000","#F00F00","#F000F0","#F0000F"];
-		    rand = back[Math.floor(Math.random() * back.length)];
-			$(this).find("h2").css("color",rand);
 		});
 		
 		var currentSentance = "";
@@ -256,7 +256,6 @@ $(document).ready(function() {
 		function afficher_write(rsl,tmp) {
 			$("#block7").stop().dequeue().animate({zIndex: "1000"},25,function() {
 				$("#block7").html("<h5>"+tmp+"</h5>");
-			    $("#block7").children("h5").css("color",rand);
 				if(rsl.length!=tmp.length) {
 					afficher_write(rsl,tmp+rsl[tmp.length]);
 				}
@@ -275,6 +274,10 @@ $(document).ready(function() {
 		});		
 		
 		$(".block").not("#block7").mouseleave(function(){
+			$(this).find(".rayon-left").css("width","1px");
+			$(this).find(".rayon-right").css("width","1px");
+			$(this).find(".rayon-bottom").css("height","1px");
+			$(this).find(".rayon-top").css("height","1px");
 			if(!isClicked) {
 				setTimeout(function(){ 
 					if ($('.block:hover').length == 0) {
