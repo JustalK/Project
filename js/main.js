@@ -7,7 +7,7 @@ $(document).ready(function() {
 	load();
 	var isClicked = false;
 	var isLoad = false;
-	
+	var rand = "#FF0000";
 	
 	function load() {
 		$("#l1").animate({height: "100%"},250,function() {
@@ -194,6 +194,11 @@ $(document).ready(function() {
 			}
 		});
 		
+		$(".block").not("#block7").mouseenter(function(){
+		    var back = ["#FF0000","#00FF00","#0000FF","#F0F000","#F00F00","#F000F0","#F0000F"];
+		    rand = back[Math.floor(Math.random() * back.length)];
+			$(this).find("h2").css("color",rand);
+		});
 		
 		var currentSentance = "";
 		var sentance1 = ["Do you wanna read something useful ?","Some articles that I have written.","My words, my thoughts !","Maybe some useful words...I hope :)"];
@@ -251,6 +256,7 @@ $(document).ready(function() {
 		function afficher_write(rsl,tmp) {
 			$("#block7").stop().dequeue().animate({zIndex: "1000"},25,function() {
 				$("#block7").html("<h5>"+tmp+"</h5>");
+			    $("#block7").children("h5").css("color",rand);
 				if(rsl.length!=tmp.length) {
 					afficher_write(rsl,tmp+rsl[tmp.length]);
 				}
